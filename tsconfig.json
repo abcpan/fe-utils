@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./lib", // 输出目录
+    "sourceMap": false,
+    "target": "esnext", // 编译目标                                 
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true, // 加载json
+    "esModuleInterop": true,
+    "removeComments": true, // 删除注释
+    "declaration": true, // 生成定义文件
+    "declarationMap": false, // 生成定义sourceMap
+    "declarationDir": "./lib/types", // 定义文件输出目录
+    "lib": ["dom", "esnext"],
+    "types": ["node"], // 导入指定类型包
+  },
+  "include": [
+    "src/*"  // 导入目录
+  ]
+}
